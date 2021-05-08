@@ -101,7 +101,6 @@ RUN set -ex \
     && python3 --version \
     && addgroup --system --gid $PYTHON_GID python \
     && adduser --system --disabled-login --ingroup python --gecos "python user" --shell /bin/false --uid $PYTHON_GID python \
-    #&& mkdir -p /app \
     && mkdir -p /usr/local/lib/python3.9 \
     && mkdir -p /home/python/.local/lib/python3.9/site-packages \
     && chown python:python -R /app \
