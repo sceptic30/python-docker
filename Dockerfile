@@ -18,6 +18,8 @@ RUN set -eux; \
     ca-certificates \
     netbase \
     tzdata \
+    curl \
+    iputils-ping \
     ; \
     rm -rf /var/lib/apt/lists/*
 
