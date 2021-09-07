@@ -24,7 +24,7 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists/*
 
 ENV GPG_KEY E3FF2839C048B25C084DEBE9B26995E310250568
-ENV PYTHON_VERSION 3.9.5
+ENV PYTHON_VERSION 3.9.7
 WORKDIR /app
 
 RUN set -ex \
@@ -124,8 +124,8 @@ RUN cd /usr/local/bin \
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
 ENV PYTHON_PIP_VERSION 21.2.4
 # https://github.com/pypa/get-pip
-ENV PYTHON_GET_PIP_URL https://github.com/pypa/get-pip/raw/1954f15b3f102ace496a34a013ea76b061535bd2/public/get-pip.py
-ENV PYTHON_GET_PIP_SHA256 f499d76e0149a673fb8246d88e116db589afbd291739bd84f2cd9a7bca7b6993
+ENV PYTHON_GET_PIP_URL https://github.com/pypa/get-pip/raw/c20b0cfd643cd4a19246ccf204e2997af70f6b21/public/get-pip.py
+ENV PYTHON_GET_PIP_SHA256 fa6f3fb93cce234cd4e8dd2beb54a51ab9c247653b52855a48dd44e6b21ff28b
 
 RUN set -ex; \
     \
